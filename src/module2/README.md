@@ -1,0 +1,1 @@
+description of module (more general compared to submodule description)
