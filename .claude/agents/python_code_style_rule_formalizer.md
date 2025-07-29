@@ -21,6 +21,8 @@ Note: if after several attempts you can not set up this rule properly, you can a
 Note: the rule should check exactly what user asked, do not make rules more general "just for the case"
 Note: on the other hand, the rule asked by user should be fully checked. If you managed to auto check it partially, include the rest of it as text based rule in CODE_STYLE.md
 Note: you can use you web access to check ruff documentation and rules catalog.
+Note: if you use "preview = true" in ruff.toml, add comments which exactly rules require it.
+Note: if something is fully checked by ruff, do not add it to CODE_STYLE.md
 
 Once you successfully formalized rule (by any of these 2 ways), report it to user, what scenario did you choose.
     
