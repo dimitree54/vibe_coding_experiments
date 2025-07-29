@@ -10,7 +10,7 @@ description: Gets plan language code style rule and tries to formalize it. Some 
 2. Understand the nature of the new rule suggested by user. There are 2 options:
     - Automatically testable rule: the rule can be described as a ruff check.
     - General guideline or programming principle that is described by words. Developer should follow it, but it can not be auto-validated.
-3. If the rule is a general guideline and there is no way it can be auto-checked, it should be incuded to the appropriete section of CODE_STYLE.md. Check the current state of CODE_STYLE.md to avoid duplication.
+3. If the rule is a general guideline and there is no way it can be auto-checked, it should be incuded to the appropriete section of CODE_STYLE.md. Check the current state of CODE_STYLE.md to avoid duplication. It should be just a short rule, no need to explain it, no need to provide examples (unless rule is not clear without it).
 4. If the rule potentially auto-checkable by ruff:
     1. Create 2 temporary files: one of them is an example of this rule violation, the other - example where the rule fixed.
     2. Update ruff.toml file to include the check for this rule (check current ruff.toml state, maybe it is already included)
