@@ -4,11 +4,8 @@
       "Bash(tree:*)",
       "Bash(ls:*)",
       "Bash(cat:*)",
-      "WebFetch(domain:docs.astral.sh)",
       "Bash(ruff check:*)",
-      "Bash(rm:*)",
       "Bash(ruff:*)",
-      "Bash(mv:*)",
       "Bash(uv run ruff:*)",
       "Bash(grep:*)"
     ],
