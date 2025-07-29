@@ -3,7 +3,7 @@
 ## Dependencies
 
 ### Outside dependencies
-What 3rd party libraries used, if available link to docs (llms.txt). What library version expected? How is it used (in short, no need to list all usages). Provide a list of the most important dependencies with their version (like requirements.txt, but with an extra description)
+What 3rd party libraries used, if available link to docs (llms.txt). What library version expected? How is it used (in short, no need to list all usages). Provide a list of the most important dependencies with their version (like requirements.txt, but with an extra description).
 
 ### Inter module dependencies
 
