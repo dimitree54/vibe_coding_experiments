@@ -8,11 +8,11 @@ What 3rd party libraries used, if available link to docs (llms.txt). What librar
 ### Inter module dependencies
 
 #### This module depends on
-What other modules of this repo used as dependencies? Make a full list. Provide path to them (from the repo root) and why they are needed and how used.
+What other modules of this repo used as dependencies? Make a full list. Provide path to them (from the repo root) and why they are needed and how used. This section can include ONLY modules of this repo and no imported libaries (all imported libraries outside thie repo should be included in the "outside dependencies" section). Before including something in this list, check that the dependency is present in this repo:
 
 For each such dependency, go to dependancy module and 
-- If it contains README.md, add current module to "Other modules depending on this module" section of this dependency module README.md
-- If this module does not contain README.md, create it, but with only section "Other modules depending on this module" with current module as the only entry.
+- If it contains DEV_README.md, add current module to "Other modules depending on this module" section of this dependency module DEV_README.md
+- If this module does not contain DEV_README.md, create it, but with only section "Other modules depending on this module" with current module as the only entry.
 
 #### Other modules depending on this module
 If some module decides to depend on this one, it should update this file and include itself to this list. On creation of module, this section contains empty list.

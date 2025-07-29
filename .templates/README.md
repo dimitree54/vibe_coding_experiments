@@ -13,7 +13,7 @@ If the module contains submodules, make a list with a short description of each 
 If the module contains some resources (data, templates), describe them here. No need to be too pricise, just overview.
 
 ## Files
-If the module contains standalone files (not submodules), list them here with a short summary about each file (its description and purpose), and for each file list all its public functions/variables/classes with their interfaces and short description on each function of what it does (but not how it does it), its purpose, when it should be used. For more complex functions usage example might be included.
+If the module contains standalone files (not submodules), list them here with a short summary about each file (its description and purpose). After that summary write "to get more info about this file, read the file `file_name.py`.
 
 If the `__init__.py` file is empty - do not include it into this list.
 

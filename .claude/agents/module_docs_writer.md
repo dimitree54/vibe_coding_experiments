@@ -28,4 +28,5 @@ description: Generate comprehensive documentation for existing module optimized 
     If they present, read them fully - it means that we will update them rather than creating the documentation from scratch.
 10. If the documentation is already present, make sure it is up-to-date. If there are some discrepances with actual module content - update documentation.
 11. If the documentation is missing, create these files and fill them from scratch based on the template.
+12. Updating DEV_README.md or other modules which current module depends on (check DEV_README.md template in "This module depends on" section for more info how to do it).
     
