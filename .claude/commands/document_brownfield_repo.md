@@ -5,7 +5,7 @@ Use this command to recursively write documentation of the whole repo to prepare
 # Instructions:
 1. Read .gitignore file
 2. Run "tree -I '.*'" plus also exclude all contents of .gitignore
-3. Recognize the content of the dir. Spot only code-related dir, ignore resources, temp local files and other non-code dirs. Only code should be documented.
+3. Recognize the content of the dir. Spot only code-related dir, ignore resources, temp local files and other non-code dirs. Only code should be documented. Also no need to separately document tests dirs (they will be documented as part of code which these tests test)
 4. Plan the code documentation process: Use available planning tools to make a documentation plan.
     - At first you should schedule module_docs_writer to document all deepest submodules (leaves of the tree).
     - Then go hop by hop and document second-level leaves modules
