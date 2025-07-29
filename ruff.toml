@@ -1,0 +1,80 @@
+# Enable preview mode for unstable rules
+preview = true
+
+# Set maximum line length to 120 characters
+line-length = 120
+
+[lint]
+select = [
+    "E501",    # Line too long
+    "TID251",  # Enable banned-api rule
+    "TID252",  # Relative imports are banned
+    "T201",    # print found
+    "T203",    # pprint found  
+    "T100",    # debugger imports found
+    "LOG",     # flake8-logging: logging issues
+    "BLE",     # flake8-blind-except: avoid catching blind exceptions
+    "TRY",     # tryceratops: exception handling best practices
+    "B904",    # Within except clause, raise exceptions with raise from
+    "E722",    # Do not use bare except
+    "SIM107",  # Avoid return in try-except-finally
+    "ANN001",  # Missing type annotation for function argument
+    "ANN201",  # Missing return type annotation for public function
+    "ANN202",  # Missing return type annotation for private function
+    "ANN204",  # Missing return type annotation for special method
+    "ANN205",  # Missing return type annotation for staticmethod
+    "ANN206",  # Missing return type annotation for classmethod
+    "RUF029",  # unused-async: async functions without await
+    "PERF203", # try-except within a loop incurs performance overhead
+    "N801",    # Invalid class name (should be CamelCase)
+    "N802",    # Invalid function name (should be snake_case)
+    "N803",    # Invalid argument name (should be snake_case)
+    "N804",    # First argument of a class method should be named 'cls'
+    "N805",    # First argument of a method should be named 'self'
+    "N806",    # Variable in function should be lowercase
+    "N807",    # Function name should not start and end with '__'
+    "N815",    # Variable in class scope should not be mixedCase
+    "N816",    # Variable in global scope should not be mixedCase
+    "PIE794",  # Duplicate class field definitions
+    "PIE796",  # Duplicate enum values
+    "PYI016",  # Duplicate union members
+    "PYI062",  # Duplicate literal members
+    "PT014",   # Duplicate test cases in pytest.mark.parametrize
+    "D100",    # Missing docstring in public module
+    "D101",    # Missing docstring in public class
+    "D102",    # Missing docstring in public method
+    "D103",    # Missing docstring in public function
+    "I",       # isort - import sorting rules
+    "S608",    # Possible SQL injection vector through string-based query construction
+    "S610",    # Use of Django `extra` can lead to SQL injection vulnerabilities
+    "S611",    # Use of `RawSQL` can lead to SQL injection vulnerabilities
+    "S601",    # Possible shell injection via Paramiko call
+    "S602",    # subprocess call with shell=True seems safe, but may be changed in the future
+    "S603",    # subprocess call: check for execution of untrusted input
+    "S609",    # Possible wildcard injection in call due to * usage
+    "S701",    # Using jinja2 templates with autoescape=False is dangerous and can lead to XSS
+    "S702",    # Mako templates allow HTML/JavaScript rendering by default and are open to XSS
+    "UPP",     # Enforce uppercase constants via ruff-uppercase plugin
+]
+
+# Ignore TRY003 as it's too strict about exception messages
+ignore = ["TRY003"]
+
+[lint.flake8-tidy-imports.banned-api]
+"unittest" = { msg = "Use pytest instead of unittest for testing" }
+"unittest.TestCase" = { msg = "Use pytest classes without inheriting from TestCase" }
+"unittest.mock" = { msg = "Use pytest-mock or unittest.mock from pytest" }
+
+[lint.flake8-tidy-imports]
+# Ban all relative imports to enforce absolute imports
+ban-relative-imports = "all"
+
+[lint.isort]
+# Configure import ordering: stdlib -> third-party -> local
+section-order = ["future", "standard-library", "third-party", "first-party", "local-folder"]
+# Force imports to be sorted within sections
+force-sort-within-sections = true
+# Combine multiple imports from the same module
+combine-as-imports = true
+# Split imports onto multiple lines when they exceed line length
+split-on-trailing-comma = true
