@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(ruff check:*)",
+      "Bash(ruff:*)",
+      "Bash(uv run ruff:*)",
+      "Bash(grep:*)"
+    ],
+    "deny": []
+  }
+}
